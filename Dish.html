@@ -1,0 +1,48 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dish Diary</title>
+    <link rel="stylesheet" href="Dish.css">
+</head>
+<body>
+    <header>
+        <h1>Dish Diary</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#recipes">Recipes</a>
+            <a href="#submit">Submit Recipe</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>Share Your Culinary Story</h2>
+        <p>Welcome to Dish Diary, where you can share your favorite recipes along with the stories behind them.</p>
+    </section>
+
+    <section id="recipes">
+        <h2>Featured Recipes</h2>
+        <div class="recipe-list" id="recipeList">
+            <!-- Recipes will be dynamically inserted here -->
+        </div>
+    </section>
+
+    <section id="submit">
+        <h2>Submit Your Recipe</h2>
+        <form id="recipeForm">
+            <input type="text" id="title" placeholder="Recipe Title" required>
+            <textarea id="story" placeholder="Tell us the story behind your recipe..." required></textarea>
+            <textarea id="ingredients" placeholder="Ingredients (separated by commas)" required></textarea>
+            <textarea id="instructions" placeholder="Instructions" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Dish Diary</p>
+    </footer>
+    <script src="Dish.js"></script>
+</body>
+</html>
